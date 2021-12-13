@@ -8,14 +8,14 @@ namespace Possible7DigitPhoneNumbers.Rules
         {
             var moves = new List<string>();
 
-            var moveLeft = layout.KeysArray.LeftOf(from);
-            var moveTopLeft = layout.KeysArray.TopLeftOf(from);
-            var moveTop = layout.KeysArray.TopOf(from);
-            var moveTopRight = layout.KeysArray.TopRightOf(from);
-            var moveRight = layout.KeysArray.RightOf(from);
-            var moveBottomRight = layout.KeysArray.BottomRightOf(from);
-            var moveBottom = layout.KeysArray.BottomOf(from);
-            var moveBottomLeft = layout.KeysArray.BottomLeftOf(from);
+            var moveLeft = layout.Keys.LeftOf(from);
+            var moveTopLeft = layout.Keys.TopLeftOf(from);
+            var moveTop = layout.Keys.TopOf(from);
+            var moveTopRight = layout.Keys.TopRightOf(from);
+            var moveRight = layout.Keys.RightOf(from);
+            var moveBottomRight = layout.Keys.BottomRightOf(from);
+            var moveBottom = layout.Keys.BottomOf(from);
+            var moveBottomLeft = layout.Keys.BottomLeftOf(from);
 
             if (moveLeft != null) moves.Add(moveLeft);
             if (moveTopLeft != null) moves.Add(moveTopLeft);

@@ -9,35 +9,35 @@ namespace Possible7DigitPhoneNumbers.Rules
             var moves = new List<string>();
 
             // bottom > bottom left
-            var bblMove = layout.KeysArray.BottomLeftOf(layout.KeysArray.BottomOf(from));
+            var bblMove = layout.Keys.BottomLeftOf(layout.Keys.BottomOf(from));
             if (bblMove!= null) moves.Add(bblMove);
 
             // bottom > bottom right
-            var bbrMove= layout.KeysArray.BottomRightOf(layout.KeysArray.BottomOf(from));
+            var bbrMove= layout.Keys.BottomRightOf(layout.Keys.BottomOf(from));
             if (bbrMove!= null) moves.Add(bbrMove);
 
             // bottom left > left
-            var bllMove = layout.KeysArray.LeftOf(layout.KeysArray.BottomLeftOf(from));
+            var bllMove = layout.Keys.LeftOf(layout.Keys.BottomLeftOf(from));
             if (bblMove!= null) moves.Add(bblMove);
 
             // bottom right > right
-            var brrMove = layout.KeysArray.RightOf(layout.KeysArray.BottomRightOf(from));
+            var brrMove = layout.Keys.RightOf(layout.Keys.BottomRightOf(from));
             if (brrMove != null) moves.Add(brrMove);
 
             // top > top right
-            var ttrMove = layout.KeysArray.TopOf(layout.KeysArray.TopRightOf(from));
+            var ttrMove = layout.Keys.TopOf(layout.Keys.TopRightOf(from));
             if (ttrMove  != null) moves.Add(ttrMove);
 
             // top > top left
-            var ttlMove = layout.KeysArray.TopOf(layout.KeysArray.TopLeftOf(from));
+            var ttlMove = layout.Keys.TopOf(layout.Keys.TopLeftOf(from));
             if (ttlMove!= null) moves.Add(ttlMove);
 
             // top right > right
-            var trrMove = layout.KeysArray.RightOf(layout.KeysArray.TopRightOf(from));
+            var trrMove = layout.Keys.RightOf(layout.Keys.TopRightOf(from));
             if (trrMove != null) moves.Add(trrMove);
 
             // top left > left
-            var tllMove = layout.KeysArray.LeftOf(layout.KeysArray.TopLeftOf(from));
+            var tllMove = layout.Keys.LeftOf(layout.Keys.TopLeftOf(from));
             if (tllMove != null) moves.Add(tllMove);
 
 

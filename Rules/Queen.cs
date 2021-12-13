@@ -10,65 +10,65 @@ namespace Possible7DigitPhoneNumbers.Rules
 
             // All left moves
             var current = from;
-            while (layout.KeysArray.LeftOf(current) != null)
+            while (layout.Keys.LeftOf(current) != null)
             {
-                current = layout.KeysArray.LeftOf(current);
+                current = layout.Keys.LeftOf(current);
                 moves.Add(current);
             }
 
             // All top left moves
             current = from;
-            while (layout.KeysArray.TopLeftOf(current) != null)
+            while (layout.Keys.TopLeftOf(current) != null)
             {
-                current = layout.KeysArray.TopLeftOf(current);
+                current = layout.Keys.TopLeftOf(current);
                 moves.Add(current);
             }
 
             // All top  moves
             current = from;
-            while (layout.KeysArray.TopOf(current) != null)
+            while (layout.Keys.TopOf(current) != null)
             {
-                current = layout.KeysArray.TopOf(current);
+                current = layout.Keys.TopOf(current);
                 moves.Add(current);
             }
 
             // All top right moves
             current = from;
-            while (layout.KeysArray.TopRightOf(current) != null)
+            while (layout.Keys.TopRightOf(current) != null)
             {
-                current = layout.KeysArray.TopRightOf(current);
+                current = layout.Keys.TopRightOf(current);
                 moves.Add(current);
             }
 
             // All right moves
             current = from;
-            while (layout.KeysArray.RightOf(current) != null)
+            while (layout.Keys.RightOf(current) != null)
             {
-                current = layout.KeysArray.RightOf(current);
+                current = layout.Keys.RightOf(current);
                 moves.Add(current);
             }
 
             //All bottom right moves
             current = from;
-            while (layout.KeysArray.BottomRightOf(current) != null)
+            while (layout.Keys.BottomRightOf(current) != null)
             {
-                current = layout.KeysArray.BottomRightOf(current);
+                current = layout.Keys.BottomRightOf(current);
                 moves.Add(current);
             }
 
             // All Bottom  moves
             current = from;
-            while (layout.KeysArray.BottomOf(current) != null)
+            while (layout.Keys.BottomOf(current) != null)
             {
-                current = layout.KeysArray.BottomOf(current);
+                current = layout.Keys.BottomOf(current);
                 moves.Add(current);
             }
 
             // All Bottom Left  moves
             current = from;
-            while (layout.KeysArray.BottomLeftOf(current) != null)
+            while (layout.Keys.BottomLeftOf(current) != null)
             {
-                current = layout.KeysArray.BottomLeftOf(current);
+                current = layout.Keys.BottomLeftOf(current);
                 moves.Add(current);
             }
 

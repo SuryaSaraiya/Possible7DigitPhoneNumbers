@@ -5,7 +5,6 @@ namespace Possible7DigitPhoneNumbers
 {
     public static class Helpers
     {
-
         private static (int, int) GetPositionOf(this List<List<string>> keyPad, string key)
         {
             var keyRow = keyPad.FindIndex(r => r.Any(k => k == key));

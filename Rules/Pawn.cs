@@ -6,11 +6,11 @@ namespace Possible7DigitPhoneNumbers.Rules
     {
         public List<string> Moves(Keypad layout, string from)
         {
-            var move = layout.KeysArray.BottomOf(from);
+            var move = layout.Keys.BottomOf(from);
 
             return move != null ?
             new List<string> {
-                layout.KeysArray.BottomOf(from)
+                layout.Keys.BottomOf(from)
             } : new List<string>();
 
         }
